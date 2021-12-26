@@ -181,4 +181,18 @@ void Concat(struct Node **S1, struct Node **S2)
     P->next = *S2;
 }
 
-// Set operations
+// Middle Element
+struct Node *Mid(struct Node **Start)
+{
+    struct Node *P = *Start;
+    struct Node *T = *Start;
+    struct Node *R = (*Start)->next;
+
+    while (R != NULL && R->next != NULL)
+    {
+        T = T->next;
+        R = R->next->next;
+        P = P->next;
+    }
+    return T;
+}

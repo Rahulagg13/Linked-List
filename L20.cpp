@@ -33,12 +33,6 @@ int main()
     InsEnd(&CStart, 3);
     InsEnd(&CStart, 4);
     InsEnd(&CStart, 5);
-    // InsBeg(&CStart2, 6);
-    // InsEnd(&CStart2, 7);
-    // InsEnd(&CStart2, 8);
-    // InsEnd(&CStart2, 9);
-    // InsEnd(&CStart2, 10);
-    // struct Node *CStart3 = Concat(&CStart, &CStart2);
     Reverse(&CStart);
     Traverse(CStart);
     return 0;
